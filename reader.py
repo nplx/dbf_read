@@ -6,6 +6,9 @@ import dbf
 import base64
 import os
 
+# 创建需要的uploads和converted文件夹
+Path('./uploads').mkdir(parents=True, exist_ok=True)
+Path('./converted').mkdir(parents=True, exist_ok=True)
 
 # 标题
 st.title('DBF文件转换 v1.0 | *.dbf → *.csv')
